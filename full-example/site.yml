@@ -1,0 +1,54 @@
+
+# common to all servers
+
+- hosts: all
+  tasks:
+    
+    # windows installation requires nssm
+    - win_chocolatey: name=jdk8
+      when: ansible_os_family == "Windows"
+
+# installed per product
+
+- hosts: cloud-agents
+  roles:
+    - role: cloud-agent
+
+# in this example postgres will be installed on
+# the same machine as the server (not HA setup)
+# reporter is installed on windows using choco
+
+- hosts: cloud-servers
+
+  tasks:
+    - win_chocolatey: name=postgresql
+  roles:
+    - role: cloud-server
+
+- hosts: nvs
+  roles:
+    - role: nv
+
+# in this example postgres will be installed on
+# the same machine as the server (not HA setup)
+# reporter is installed on windows using choco
+
+- hosts: reporters
+
+  tasks:
+    - win_chocolatey: name=postgresql
+
+  roles:
+    - role: reporter
+
+- hosts: file-storages
+  roles:
+    - role: file-storage
+
+- hosts: app-signers
+  roles:
+    - role: app-signer
+
+- hosts: regional-proxys
+  roles:
+    - role: regional-proxy
