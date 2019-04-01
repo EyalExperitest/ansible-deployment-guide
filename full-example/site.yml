@@ -21,9 +21,13 @@
 - hosts: cloud-servers
 
   tasks:
-    - win_chocolatey: name=postgresql
+    - name: install postgres
+      win_chocolatey: name=postgresql
+      install_args:
+        - '/Password:{{ db_password }}'
   roles:
     - role: cloud-server
+      db_password: "{{ db_password }}"
 
 - hosts: nvs
   roles:
@@ -36,10 +40,13 @@
 - hosts: reporters
 
   tasks:
-    - win_chocolatey: name=postgresql
-
+    - name: install postgres
+      win_chocolatey: name=postgresql
+      install_args:
+        - '/Password:{{ db_password }}'
   roles:
     - role: reporter
+      db_password: "{{ db_password }}"
 
 - hosts: file-storages
   roles:
