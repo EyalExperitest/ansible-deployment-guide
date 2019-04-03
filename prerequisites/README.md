@@ -18,3 +18,6 @@ Executor machine is the machine from which we run ansible deployment.
 Linux and Mac OS are supported out of the box. \
 Using windows to run ansible is more tricky. \
 Windows subsystem works, but if it is not available - installation [gets technical](./windows/Ansible-On-Windows.md).
+
+When using winrm - you will need to install:
+`pip install pywinrm`

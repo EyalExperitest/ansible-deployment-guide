@@ -7,6 +7,10 @@
 ## Remote Login
 * winrm is installed and firewall ports are open - [see file](./Install-WinRM.ps1)
 
+## Connecting from mac to windows machine (winrm)
+- pip install "pywinrm"
+- *export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES*
+
 <br>
 
 ### Additional Configuration
