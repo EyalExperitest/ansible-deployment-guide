@@ -59,3 +59,7 @@
 - hosts: regional-proxys
   roles:
     - role: regional-proxy
+
+- hosts: selenium-agents
+  roles:
+    - role: selenium-agent
