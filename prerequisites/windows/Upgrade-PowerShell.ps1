@@ -4,8 +4,8 @@
 # configures - powershell, firewall
 #########################################################
 
-$username = "<username>"
-$password = "<password>"
+$username = <username>
+$password = <password>
 
 $url = "https://raw.githubusercontent.com/jborean93/ansible-windows/master/scripts/Upgrade-PowerShell.ps1"
 $file = "$env:temp\Upgrade-PowerShell.ps1"
