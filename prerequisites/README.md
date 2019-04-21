@@ -3,7 +3,7 @@
 
 ## Control Machine
 
-Executor machine is the machine from which we run ansible deployment.
+The machine from which we run ansible deployment.
 
 * for windows machines - [click here](./windows-control)
 * for mac os machines - [click here](./mac-os-control)
@@ -11,8 +11,7 @@ Executor machine is the machine from which we run ansible deployment.
 
 ## Node Machines
 
-Node machine is a machine to which we want on which we want to install software
-
+The machine to which we want on which we want to install software. \
 The following resources describe how to configure a machine (physical \ virtual) before deploying software to it - using ansible.
 
 * for windows machines - [click here](./windows-node)

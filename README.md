@@ -10,7 +10,8 @@ All the steps one need to perform before automating deployment using ansible
 
 - [Security guidelines and best practices](./best-practices/security)
 
-- [Migration guide](./migrating-from-install4j)
+- [Migration guide](./migrating-from-install4j) \
+Guide for our existing customers, used to install the lab using (install4j based) installer
 
 - [Complete example](./full-example) \
 Deploying the entire stack in multi host environment
