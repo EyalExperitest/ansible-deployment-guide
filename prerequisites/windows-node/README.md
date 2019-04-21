@@ -1,5 +1,5 @@
 
-# Prepare Windows Machine
+# Prepare Node - Windows Machine
 
 ## Prerequisites
 * powershell 5.1 is installed - [see file](./Upgrade-PowerShell.ps1)

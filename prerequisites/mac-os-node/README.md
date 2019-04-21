@@ -1,5 +1,5 @@
 
-# Prepare Mac OS Machine
+# Prepare Node - MacOS Machine
 
 ## Prerequisites
 
