@@ -1,18 +1,18 @@
 
-# Examples Repo - Ansible Deployments
-This repo contains examples, and guidelines for using ansible to deploy experitest products.
+# Experitest - Ansible Deployments Guide
+Experitest is a private company, creating software to manage enterprise level Mobile Device Lab, for automating mobile application and web testing.
 
-## Prerequisites
-In the [prerequisites](./prerequisites) section we specify all the dependencies and requirements expected before working in the project.
 
-## WinRM Encryption in transit
-[In this section](./ssl-and-winrm) we show to create and configure SSL certificate to encrypt windows remote commands at transit. 
+This repo contains **examples**, **best practices**, and **guidelines** for using ansible to deploy experitest products.
 
-## Examples
-[Full example](./full-example) - contains deployment the complete suite of tools.
+- [Prerequisites](./prerequisites) \
+All the steps one need to perform before automating deployment using ansible
 
-### OS Support
-* Windows 8 and above
-* Mac OS High sierra and above
+- [Security guidelines and best practices](./best-practices/security)
 
-- _NV_ is only supported in linux
+- [Migration guide](./migrating-from-install4j)
+
+- [Complete example](./full-example) \
+Deploying the entire stack in multi host environment
+
+- [OS Support Matrix](./compatibility/OS)
