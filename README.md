@@ -1,15 +1,14 @@
 
 # Experitest - Ansible Deployments Guide
 
-**Experitest** is a private company, creating software to manage enterprise level Mobile Device Lab - for automating mobile application and web testing.
+Experitest is a **private company**, creating software to manage enterprise level Mobile Device Lab - for automating mobile application and web testing.
 
-
-## NOTE: 
-Please read carefully before implementing. \
-Using ansible to deploy can get technical. \
+```md
+# NOTE: 
+Please read carefully before implementing. 
+Using ansible to deploy can get technical. 
 Avoid the pitfalls by reading this documntation. 
-
-<br>
+```
 
 This repo contains **examples**, **best practices**, and **guidelines** for using ansible to deploy experitest products:
 
