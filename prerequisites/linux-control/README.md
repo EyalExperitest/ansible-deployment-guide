@@ -27,8 +27,8 @@ sudo apt-get install ansible
 sudo dnf install ansible
 ```
 
-* [genereate \ add ssh key](./SSH.md#generate)
-* [add hosts to known_hosts file](./SSH.md#knownhosts)
+* [genereate \ add ssh key](../SSH.md#passwordless-login)
+* [add hosts to known_hosts file](../SSH.md#known-hosts)
 
 * connecting to ***windows*** node machines requires
 ```sh
