@@ -20,7 +20,11 @@ All the steps one need to perform before automating deployment using ansible
 - [Migration guide](./migrating-from-install4j) \
 Guide for our existing customers, used to install the lab using (install4j based) installer
 
-- [Complete example](./full-example) \
+- [Dev setup example](./examples/local) \
+Install all components on a single host. \
+Useful for testing \ development.
+
+- [Complete example](./examples/complete) \
 Deploying the entire stack in multi host environment
 
 - [OS Support Matrix](./compatibility/OS.md) \

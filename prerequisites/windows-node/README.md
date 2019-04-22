@@ -22,16 +22,16 @@ for further explanation visit [the following link](https://docs.ansible.com/ansi
 1.2.3.4
 
 [instance1:vars]
-ansible_connection: winrm 
+ansible_connection=winrm 
 
 # add domain to username 
-ansible_user: <username>@<domain-name>
-ansible_password: <password> 
-ansible_become_method: runas 
-ansible_winrm_server_cert_validation: ignore
+ansible_user=<username>@<domain-name>
+ansible_password=<password> 
+ansible_become_method=runas 
+ansible_winrm_server_cert_validation=ignore
 
 # add this
-ansible_winrm_transport: ntlm
+ansible_winrm_transport=ntlm
 ```
 
 <br>

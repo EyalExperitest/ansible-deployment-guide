@@ -24,14 +24,14 @@ FROM
 1.2.3.4
 
 [instance1:vars]
-ansible_connection: winrm 
+ansible_connection=winrm 
 
-ansible_user: <username> 
-ansible_password: <password> 
-ansible_become_method: runas 
+ansible_user=<username> 
+ansible_password=<password> 
+ansible_become_method=runas 
 
 # insecure
-ansible_winrm_server_cert_validation: ignore    
+ansible_winrm_server_cert_validation=ignore
 ```
 
 
@@ -41,14 +41,14 @@ TO
 1.2.3.4
 
 [instance1:vars]
-ansible_connection: winrm
+ansible_connection=winrm
 
-ansible_user: <username>
-ansible_password: <password>
-ansible_become_method: runas
+ansible_user=<username>
+ansible_password=<password>
+ansible_become_method=runas
 
 # add certificate to host / group vars
-ansible_winrm_transport: certificate
-ansible_winrm_cert_pem: path/to/public.pem
-ansible_winrm_cert_key_pem: path/to/private.pem
+ansible_winrm_transport=certificate
+ansible_winrm_cert_pem=path/to/public.pem
+ansible_winrm_cert_key_pem=path/to/private.pem
 ```

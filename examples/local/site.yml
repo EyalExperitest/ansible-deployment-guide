@@ -1,0 +1,49 @@
+
+# install java on all hosts
+
+- hosts: all
+  tasks:
+    - win_chocolatey: name=jdk8
+      when: ansible_os_family == "Windows"
+
+# install components according to groups
+
+- hosts: cloud-servers
+  vars:
+      db_password: 123
+  
+  roles:
+    - role: cloud-server
+      db_password: "{{ db_password }}"
+
+- hosts: reporters
+  vars:
+    db_password: 123
+
+  roles:
+    - role: reporter
+      db_password: "{{ db_password }}"
+
+- hosts: cloud-agents
+  roles:
+    - role: cloud-agent
+
+- hosts: file-storages
+  roles:
+    - role: file-storage
+
+- hosts: app-signers
+  roles:
+    - role: app-signer
+
+- hosts: regional-proxies
+  roles:
+    - role: regional-proxy
+
+- hosts: nvs
+  roles:
+    - role: nv
+
+- hosts: selenium-agents
+  roles:
+    - role: selenium-agent
