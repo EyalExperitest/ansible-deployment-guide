@@ -27,8 +27,14 @@ sudo apt-get install ansible
 sudo dnf install ansible
 ```
 
+* make sure ansible is installed and in version 2.7 or above
+`ansible --version`
+
+* [make sure git is installed on the machine](../../appendix/install-git.md)
+
 * [genereate \ add ssh key](../SSH.md#passwordless-login)
 * [add hosts to known_hosts file](../SSH.md#known-hosts)
+
 
 * connecting to ***windows*** node machines requires
 ```sh

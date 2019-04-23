@@ -1,18 +1,14 @@
 
 # Prepare Windows Control Machine
 
-Using windows to run ansible is more tricky. \
-Windows subsystem works, but if it is not available - installation [gets technical](./Ansible-On-Windows.md).
+## Installations
 
-* install linux subsystem
-* following the installation process as in linux guide
+* [install linux subsystem](../../appendix/windows-subsystem.md)
+* if you cannot install linux subsystem, possible workaround is [using cygwin](./Ansible-On-Windows.md).
+* [following the installation process as in linux guide](../linux-control)
 
+## Execution
 
-* after - create project
-
-
-
-When using winrm - you will need to install:
-`pip install pywinrm`
-
-https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#control-machine-requirements
+when executing ansible in windows subsystem, \
+the project folder will be from windows \
+execution will be from the subsystem

@@ -7,10 +7,6 @@
 ## Remote Login
 * winrm is installed and firewall ports are open - [see file](./Install-WinRM.ps1)
 
-## Connecting from mac to windows machine (winrm)
-- pip install "pywinrm"
-- *export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES*
-
 ## Connecting to domain connected windows machine
 if the windows host to connect is associated with domain, you might not be able to connect to it.\
 possible solution to this problem is the change the transform protocol to NTLM.
@@ -35,6 +31,17 @@ ansible_winrm_transport=ntlm
 ```
 
 <br>
+
+### Credentials Rejected
+
+If you get an error that the server has rejected you credentials, use the following command to print the username to use:
+
+```ps1
+$env:UserName
+```
+
+In some cases, using ___ansible_winrm_transport=basic___ is the only working login method.
+
 
 ### Additional Configuration
 See the official ansible documentation [for further instructions](https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html).

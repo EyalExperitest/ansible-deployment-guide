@@ -27,4 +27,4 @@
 `ansible-galaxy install -r requirements.yml --force`
 
 - run the deployment \
-`ansible-playbook site.yml -i inventory.ini`
+`ansible-playbook site.yml -i inventories/local/hosts.ini`

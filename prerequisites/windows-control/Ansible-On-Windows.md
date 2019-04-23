@@ -23,4 +23,3 @@ Installing via linux subsystem is better technique.
   * easy_install-2.7 pip
 * Install Ansible
   * pip install ansible
-
