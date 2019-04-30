@@ -30,3 +30,7 @@
 - src: git+https://github.com/ExperitestOfficial/ansible-role-selenium-agent.git
   version: master
   name: selenium-agent
+
+- src: git+https://github.com/ExperitestOfficial/ansible-role-java8.git
+  version: master
+  name: java8
