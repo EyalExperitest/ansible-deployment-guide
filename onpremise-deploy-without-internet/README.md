@@ -1,5 +1,5 @@
 
-# Prepare Linux Control Machine - Without internet
+# Prepare Ansible Control Machine - Without internet
 
 ## Requirements:
 
