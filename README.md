@@ -10,25 +10,7 @@ Using ansible to deploy can get technical.
 Avoid the pitfalls by reading this documntation. 
 ```
 
-This repo contains **examples**, **best practices**, and **guidelines** for using ansible to deploy experitest products:
+This repo contains **Onpremise deployment** for using ansible to deploy experitest products without internet on ansible control machine:
 
-- [Prerequisites](./prerequisites) \
-All the steps one need to perform before automating deployment using ansible
-
-- [Security guidelines and best practices](./best-practices/security)
-
-- [Migration guide](./migrating-from-install4j) \
-Guide for our existing customers, used to install the lab using (install4j based) installer
-
-- [Dev setup example](./examples/local) \
-Install all components on a single host. \
-Useful for testing \ development.
-
-- [Complete example](./examples/complete) \
-Deploying the entire stack in multi host environment
-
-- [OS Support Matrix](./compatibility/OS.md) \
-Listing the supported os versions for our products.
-
-- [Onpremise deployment](./onpremise-deploy/Readme.md) \
+- [Onpremise deployment](./onpremise-deploy-without-internet/Readme.md) \
 Install ansible to onpremise systems without internet.
